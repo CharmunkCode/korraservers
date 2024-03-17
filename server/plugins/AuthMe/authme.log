@@ -1,0 +1,374 @@
+[03-17 14:11:06]: [INFO] Created column 'regdate' and set the current timestamp, 1710684666117, to all 0 rows
+[03-17 14:11:06]: [INFO] SQLite Setup finished
+[03-17 14:11:06]: [INFO] No supported permissions system found! Permissions are disabled!
+[03-17 14:11:06]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[03-17 14:11:06]: [INFO] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[03-17 14:11:07]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[03-17 14:11:07]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[03-17 14:11:07]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[03-17 14:11:07]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[03-17 14:11:07]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:173)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:144)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:11:34]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 14:11:34]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:11:45]: [FINE] Char registered 0:0:0:0:0:0:0:1
+[03-17 14:11:45]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 14:12:09]: [INFO] AuthMe 5.6.0-beta2-b2453 disabled!
+[03-17 14:14:45]: [INFO] SQLite Setup finished
+[03-17 14:14:45]: [INFO] No supported permissions system found! Permissions are disabled!
+[03-17 14:14:45]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[03-17 14:14:45]: [INFO] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[03-17 14:14:47]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[03-17 14:14:47]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[03-17 14:14:47]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[03-17 14:14:47]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[03-17 14:14:47]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:173)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:144)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:15:13]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 14:15:13]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:15:19]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 14:18:57]: [INFO] AuthMe 5.6.0-beta2-b2453 disabled!
+[03-17 14:18:57]: [INFO] SQLite Setup finished
+[03-17 14:18:57]: [INFO] No supported permissions system found! Permissions are disabled!
+[03-17 14:18:57]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[03-17 14:18:57]: [INFO] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[03-17 14:18:58]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[03-17 14:18:58]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[03-17 14:18:58]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[03-17 14:18:58]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[03-17 14:18:58]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:173)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:144)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:19:04]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 14:19:04]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:19:08]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 14:30:05]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 14:30:05]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 14:30:11]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 15:09:04]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 15:09:04]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 15:09:10]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 15:13:42]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 15:13:42]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 15:13:48]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 15:15:55]: [INFO] AuthMe 5.6.0-beta2-b2453 disabled!
+[03-17 15:15:55]: [INFO] SQLite Setup finished
+[03-17 15:15:55]: [INFO] No supported permissions system found! Permissions are disabled!
+[03-17 15:15:55]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[03-17 15:15:56]: [INFO] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[03-17 15:15:56]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[03-17 15:15:56]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[03-17 15:15:56]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[03-17 15:15:56]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[03-17 15:15:56]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:173)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:144)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 15:16:26]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 15:21:04]: [WARN] Could not save LimboPlayer for 'Char' [InaccessibleObjectException]: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+[03-17 15:21:04]: java.lang.reflect.InaccessibleObjectException: Unable to make private java.util.Collections$EmptyList() accessible: module java.base does not "opens java.util" to unnamed module @b121a86
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:194)
+	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:187)
+	at com.google.gson.internal.ConstructorConstructor.newDefaultConstructor(ConstructorConstructor.java:97)
+	at com.google.gson.internal.ConstructorConstructor.get(ConstructorConstructor.java:79)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:356)
+	at com.google.gson.Gson.toJson(Gson.java:585)
+	at com.google.gson.Gson.toJsonTree(Gson.java:486)
+	at com.google.gson.Gson.toJsonTree(Gson.java:465)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:48)
+	at fr.xephi.authme.data.limbo.persistence.LimboPlayerSerializer.serialize(LimboPlayerSerializer.java:16)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:70)
+	at com.google.gson.TreeTypeAdapter.write(TreeTypeAdapter.java:63)
+	at com.google.gson.Gson.toJson(Gson.java:593)
+	at com.google.gson.Gson.toJson(Gson.java:572)
+	at com.google.gson.Gson.toJson(Gson.java:527)
+	at com.google.gson.Gson.toJson(Gson.java:507)
+	at fr.xephi.authme.data.limbo.persistence.IndividualFilesPersistenceHandler.saveLimboPlayer(IndividualFilesPersistenceHandler.java:66)
+	at fr.xephi.authme.data.limbo.persistence.LimboPersistence.saveLimboPlayer(LimboPersistence.java:54)
+	at fr.xephi.authme.data.limbo.LimboService.createLimboPlayer(LimboService.java:82)
+	at fr.xephi.authme.process.join.AsynchronousJoin.lambda$processJoinSync$8(AsynchronousJoin.java:177)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:352)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:783)
+	at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:378)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:713)
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 15:21:11]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 15:23:41]: [INFO] AuthMe 5.6.0-beta2-b2453 disabled!
+[03-17 15:23:41]: [INFO] SQLite Setup finished
+[03-17 15:23:41]: [INFO] No supported permissions system found! Permissions are disabled!
+[03-17 15:23:41]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[03-17 15:23:41]: [INFO] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[03-17 15:23:42]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[03-17 15:23:42]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[03-17 15:23:42]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[03-17 15:23:42]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[03-17 15:23:42]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:173)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:144)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftTask.run(CraftTask.java:59)
+	at org.bukkit.craftbukkit.v1_8_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:53)
+	at org.github.paperspigot.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:23)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[03-17 15:23:52]: [FINE] Char logged in 0:0:0:0:0:0:0:1
+[03-17 15:24:19]: [INFO] AuthMe 5.6.0-beta2-b2453 disabled!
